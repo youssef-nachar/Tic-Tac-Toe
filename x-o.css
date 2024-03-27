@@ -43,10 +43,31 @@ button{
     color:white;
     background-color: #8c52ff;
     cursor: pointer;
+    text-transform: capitalize
 
 }
 
 button:hover{
     transition: 0.25s;
-    background-color: #c1a2fe
+    background-color: #c1a2fe;
+    scale: 1.1
+}
+button:active{
+    scale: .5
+}
+.game--status{
+    color:red;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+
+@media(max-width:500px){
+    section{
+        margin:auto;
+        width: 100%;
+    }
+    .game--container{
+        margin:auto
+    }
 }
